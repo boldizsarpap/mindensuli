@@ -1,0 +1,120 @@
+/*input[type=email] {
+	border-color: #d8b259;
+	border-radius: 9999em;
+	text-align: center;
+	background-color: rgba(214, 214, 214, 0.6);
+}*/
+
+input {
+	
+	border:4px solid rgba(216,178,89,.5);
+	font-size:1.75em;
+	padding:.25em .5em .3125em;
+	color:rgba(0,0,0,.5);
+	border-radius:.25em;
+	background-color: rgba(230,230,230, .9);
+	transition:all .100s;
+
+	
+	&:focus{
+		outline:none;
+		color:rgba(186, 143, 44,.75);
+		border-color:rgba(216, 178, 89,1);
+	}
+	/*
+	&.keyup {
+		color:white;
+		border-color:white;
+		text-shadow:0 0 .125em white;
+		box-shadow:0 0 .25em white,inset 0 0 .25em white;
+	}*/
+}
+
+
+canvas {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	pointer-events:none;
+}
+
+input {
+	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+$placeholder-color:rgba(186, 143, 44, 1);
+
+::-webkit-input-placeholder {
+	color:$placeholder-color;
+	text-shadow:0 0 .125em transparent;
+	transition:all .25s;
+}
+input:focus::-webkit-input-placeholder {
+	opacity:.5;
+}
+
+::-moz-placeholder {
+	color:$placeholder-color;
+	text-shadow:0 0 .125em transparent;
+	transition:all .25s;
+}
+input:focus::-moz-placeholder {
+	opacity:.5;
+}
+
+:-ms-input-placeholder {
+	color:$placeholder-color;
+	text-shadow:0 0 .125em transparent;
+	transition:all .25s;
+}
+input:focus:-ms-input-placeholder {
+	opacity:.5;
+}
+
+input[type=search]{
+	margin-bottom: 2em;
+}
+
+@media (max-width: 992px) {
+
+	input[type=search] {
+		width: 50%;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	input[type=email] {
+		width: 75%;
+		font-size: 1em;
+	}
+
+}
+
+/*html,body {
+	height:100%;
+	overflow:hidden;
+}
+
+html {
+	background:#333 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/68397/forest-fly-agaric-fog-moss-fliegenpilz.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+
+body {
+	box-shadow:inset 0 0 5em #000; 
+}
+
+input {
+	position:absolute;
+	box-sizing:border-box;
+	bottom: 4em;
+	left:50%;
+	width:11em;
+	margin-left:-5.5em;
+}
+
+*/
